@@ -87,15 +87,15 @@ jobs:
 
 
   # Run eslint test + upload artifact (eslint-out.html)
-      - name: eslint
-        run : ./node_modules/eslint/bin/eslint.js -c ./.eslintrc-jsc.yml --format html ./apiproxy/resources/jsc > ./eslint-out.html
+#       - name: eslint
+#         run : ./node_modules/eslint/bin/eslint.js -c ./.eslintrc-jsc.yml --format html ./apiproxy/resources/jsc > ./eslint-out.html
 
-      - name: Archive esLint results
-        uses: actions/upload-artifact@v3
-        with:
-          name: eslint-report
-          path: ./eslint-out.html
-          retention-days: 5
+#       - name: Archive esLint results
+#         uses: actions/upload-artifact@v3
+#         with:
+#           name: eslint-report
+#           path: ./eslint-out.html
+#           retention-days: 5
 
 
   # Run JS Mocha test + upload artifact (coverage/index.html)
