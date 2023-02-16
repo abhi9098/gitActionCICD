@@ -5,14 +5,14 @@ on: push
   
   
 env:
-  API_VERSION: googleapi 
+  #API_VERSION: googleapi 
   # or 
-  #API_VERSION: apigeeapi
+  API_VERSION: apigeeapi
 
   # Default Target Apigee Organization et environment (can be also be dynamically defined in [Set Variables *] steps)
-  DEFAULT_APIGEE_ORG: bap-emea-apigee-5
-  DEFAULT_APIGEE_ENV: default-dev
-  TEST_HOST: 34.117.38.184.nip.io
+  DEFAULT_APIGEE_ORG: neosalpha-apigee
+  DEFAULT_APIGEE_ENV: sandbox
+  TEST_HOST: 3na-sandbox.nalphatech.com
 
   # Retrieve Apigee UserID and password from repository settings (secrets)
   APIGEE_CREDS_USR: ${{ secrets.APIGEE_CREDS_USR }}
